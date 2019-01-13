@@ -24,19 +24,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZOQ-H9-E3U">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZOQ-H9-E3U">
                                 <rect key="frame" x="0.0" y="128.5" width="375" height="538.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="129" id="X41-Ng-R44" customClass="CategoryCell" customModule="CoderSwag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="129" id="X41-Ng-R44" customClass="CategoryCell" customModule="CoderSwag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="129"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X41-Ng-R44" id="dj7-ov-Gil">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="129"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="4ds-ZS-u39">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="123"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCG-3G-hdX">
                                                     <rect key="frame" x="118" y="49.5" width="139" height="30"/>
@@ -50,10 +50,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="4ds-ZS-u39" secondAttribute="bottom" id="0Js-Kj-zX8"/>
-                                                <constraint firstItem="4ds-ZS-u39" firstAttribute="top" secondItem="dj7-ov-Gil" secondAttribute="top" id="1RS-AP-ZQY"/>
+                                                <constraint firstAttribute="bottom" secondItem="4ds-ZS-u39" secondAttribute="bottom" constant="3" id="ICM-hh-jN9"/>
                                                 <constraint firstItem="4ds-ZS-u39" firstAttribute="leading" secondItem="dj7-ov-Gil" secondAttribute="leading" id="cIo-pj-d7M"/>
                                                 <constraint firstItem="dCG-3G-hdX" firstAttribute="centerX" secondItem="dj7-ov-Gil" secondAttribute="centerX" id="ldj-7Q-2s5"/>
+                                                <constraint firstItem="4ds-ZS-u39" firstAttribute="top" secondItem="dj7-ov-Gil" secondAttribute="top" constant="3" id="nyA-VG-Daw"/>
                                                 <constraint firstItem="dCG-3G-hdX" firstAttribute="centerY" secondItem="dj7-ov-Gil" secondAttribute="centerY" id="tdU-oA-F0H"/>
                                                 <constraint firstAttribute="trailing" secondItem="4ds-ZS-u39" secondAttribute="trailing" id="uDw-br-de2"/>
                                             </constraints>

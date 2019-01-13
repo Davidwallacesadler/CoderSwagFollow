@@ -13,6 +13,8 @@
 		638B4A4121EA5CE000C0844D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638B4A4021EA5CE000C0844D /* Assets.xcassets */; };
 		638B4A4421EA5CE000C0844D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638B4A4221EA5CE000C0844D /* LaunchScreen.storyboard */; };
 		638B4A5121EA6D9000C0844D /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4A5021EA6D9000C0844D /* CategoryCell.swift */; };
+		638B4A5321EA86FA00C0844D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4A5221EA86FA00C0844D /* Category.swift */; };
+		638B4A5721EBE7D300C0844D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4A5621EBE7D300C0844D /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		638B4A4321EA5CE000C0844D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		638B4A4521EA5CE000C0844D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		638B4A5021EA6D9000C0844D /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		638B4A5221EA86FA00C0844D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		638B4A5621EBE7D300C0844D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		638B4A3821EA5CDB00C0844D /* CoderSwag */ = {
 			isa = PBXGroup;
 			children = (
+				638B4A5521EBE7B100C0844D /* Services */,
 				638B4A4D21EA6D0600C0844D /* View */,
 				638B4A4B21EA6CA500C0844D /* Controller */,
 				638B4A4C21EA6CAE00C0844D /* Model */,
@@ -79,6 +84,7 @@
 		638B4A4C21EA6CAE00C0844D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				638B4A5221EA86FA00C0844D /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +95,14 @@
 				638B4A5021EA6D9000C0844D /* CategoryCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		638B4A5521EBE7B100C0844D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				638B4A5621EBE7D300C0844D /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +179,8 @@
 				638B4A3C21EA5CDB00C0844D /* CategoriesVC.swift in Sources */,
 				638B4A3A21EA5CDB00C0844D /* AppDelegate.swift in Sources */,
 				638B4A5121EA6D9000C0844D /* CategoryCell.swift in Sources */,
+				638B4A5321EA86FA00C0844D /* Category.swift in Sources */,
+				638B4A5721EBE7D300C0844D /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
