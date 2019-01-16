@@ -11,8 +11,8 @@ import UIKit
 //To feed our TableView with data we will need to implement some delegates/protocols.
 //Our TableView:
 //1) Needs to know where the data source is
-//2) Needs to how cells are dequeued when off screen
-//3) How many cells on the screen
+//2) Needs to how cells are dequeued when off screen (reuse identifiers)
+//3) Needs to know how many cells there will be in the table
 class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var categoryTable: UITableView!
