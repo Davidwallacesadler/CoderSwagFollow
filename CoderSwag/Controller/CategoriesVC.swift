@@ -25,12 +25,12 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataService.instance.getCatagories().count
+        return DataService.instance.getCategories().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell") as? CategoryCell {
-            let category = DataService.instance.getCatagories()[indexPath.row]
+            let category = DataService.instance.getCategories()[indexPath.row]
             cell.updateViews(category: category)
             return cell
         } else {
@@ -38,7 +38,24 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "ProductsVC", sender: category)
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productsVC = segue.destination as? ProductsVC {
+            //To create our our own custom NavigationBar icon we can make another one here in the prepare for segue function
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn
+            //this assertion will be called at buildtime - sender must be of type catagory or it will crash
+            assert(sender as? Category != nil)
+            productsVC.initProducts(category: sender as! Category)
+            
+         
+        }
+    }
 
 }
 

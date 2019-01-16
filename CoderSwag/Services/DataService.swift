@@ -55,7 +55,7 @@ class DataService {
     
     
     //Simulate retreiving category data from some kind of dataservice - in a real case secenario - we would probably want a competion handler to run this process on a background thread.
-    func getCatagories() -> [Category] {
+    func getCategories() -> [Category] {
         return categories
     }
     
